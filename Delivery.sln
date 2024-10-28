@@ -25,9 +25,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delivery.Audit.UseCases", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delivery.Audit.Logger", "src\Audit\Delivery.Audit.Logger\Delivery.Audit.Logger.csproj", "{0AF89836-F958-4BC5-B084-0BC67C1CB8AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delivery.Contracts", "src\Delivery.Contracts\Delivery.Contracts.csproj", "{3B11BA3F-7FDE-40A5-8665-DFCC2F384852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delivery.Contracts", "src\Delivery.Contracts\Delivery.Contracts.csproj", "{3B11BA3F-7FDE-40A5-8665-DFCC2F384852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delivery.FunctionalTests", "tests\Delivery.FunctionalTests\Delivery.FunctionalTests.csproj", "{2113AECA-3A19-4F6F-A4D9-5513FF8F5991}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delivery.FunctionalTests", "tests\Delivery.FunctionalTests\Delivery.FunctionalTests.csproj", "{2113AECA-3A19-4F6F-A4D9-5513FF8F5991}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39CA08A4-07D5-4ED5-9D14-6A2A41D15200}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
