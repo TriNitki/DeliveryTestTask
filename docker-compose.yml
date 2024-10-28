@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  delivery:
+    container_name: delivery
+    build:
+      context: .
+      dockerfile: src/Delivery.Service/Dockerfile
+    ports:
+      - "5003:8080"
+      - "5004:8081"
+    depends_on:
+      - delivery-db
+
+  delivery-db:
+    image: postgres:15-alpine
+    container_name: delivery-db
+    volumes:
+      - delivery-db:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: delivery_center
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  delivery-db:
+  consul_data:
+    driver: local
