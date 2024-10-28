@@ -1,0 +1,12 @@
+[
+    {
+        "Weight": 1.2,
+        "DateTime": "2024-11-01",
+        "DistrictId": "e9c2c952-b1f6-4e89-9373-b11850b7b0d2"
+    },
+    {
+        "Weight": -1.5,
+        "DateTime": "2024-10-20",
+        "DistrictId": "e9c2c952-b1f6-4e89-9373-b11850b7b0d2"
+    }
+]
