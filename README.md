@@ -32,7 +32,7 @@ dotnet run --project src/Delivery.Service
 
 #### Конфигурация файла `appsettings.json`
 
-Для запуска проекта стоит изменить значение "ConnestionStrings:Npgsql" в соответствии с настройками локальной СУБД.
+Для запуска проекта стоит изменить значение "ConnestionStrings:Npgsql" в соответствии с реквизитами локальной СУБД.
 
 ### Запуск в Docker
 
